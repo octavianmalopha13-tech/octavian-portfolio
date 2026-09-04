@@ -1,173 +1,50 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Octavian • Blockchain Developer</title>
     <style>
-        * { margin: 0; padding: 0; box-sizing: border-box; }
-        body {
-            font-family: 'Segoe UI', Tahoma, sans-serif;
-            background: #0d1117;
-            color: #c9d1d9;
-            padding: 40px 20px;
-            max-width: 900px;
-            margin: 0 auto;
-        }
-        h1 { color: #58a6ff; font-size: 2.5rem; }
-        .subtitle { color: #8b949e; font-size: 1.2rem; margin-bottom: 30px; }
-        .project {
-            background: #161b22;
-            padding: 25px;
-            margin: 20px 0;
-            border-radius: 10px;
-            border-left: 4px solid #58a6ff;
-        }
-        .project h2 { color: #58a6ff; margin-bottom: 10px; }
-        .project p { color: #c9d1d9; line-height: 1.6; }
-        .tech { color: #f0883e; font-weight: bold; margin: 10px 0; }
-        .links a {
-            color: #58a6ff;
-            text-decoration: none;
-            margin-right: 15px;
-            padding: 8px 16px;
-            border: 1px solid #30363d;
-            border-radius: 6px;
-            display: inline-block;
-            transition: 0.2s;
-        }
-        .links a:hover { background: #21262d; border-color: #58a6ff; }
-        .badge {
-            display: inline-block;
-            background: #238636;
-            color: white;
-            padding: 2px 12px;
-            border-radius: 20px;
-            font-size: 0.8rem;
-            margin: 5px 5px 5px 0;
-        }
-        .badge-go { background: #00add8; }
-        .badge-websocket { background: #7b2fbe; }
-        .badge-blockchain { background: #f0883e; }
-        .badge-rust { background: #d64000; }
-        .footer {
-            margin-top: 50px;
-            padding-top: 20px;
-            border-top: 1px solid #30363d;
-            color: #8b949e;
-            text-align: center;
-        }
-        .skills {
-            display: flex;
-            flex-wrap: wrap;
-            gap: 10px;
-            margin: 20px 0;
-        }
-        .skill {
-            background: #21262d;
-            padding: 6px 14px;
-            border-radius: 20px;
-            font-size: 0.9rem;
-            border: 1px solid #30363d;
-        }
-        .count { color: #8b949e; font-size: 0.9rem; }
+        body { font-family: monospace; background: #0d1117; color: #c9d1d9; padding: 40px; max-width: 800px; margin: 0 auto; }
+        h1 { color: #58a6ff; }
+        .project { background: #161b22; padding: 20px; margin: 15px 0; border-radius: 8px; border-left: 4px solid #58a6ff; }
+        a { color: #58a6ff; }
+        .tech { color: #f0883e; }
     </style>
 </head>
 <body>
+    <h1>🧑‍💻 Octavian Willy</h1>
+    <p>Go Blockchain Developer • Distributed Systems • WebSockets</p>
 
-    <h1>🧑‍💻 Octavian</h1>
-    <div class="subtitle">Go Blockchain Developer • Distributed Systems • WebSockets</div>
-
-    <div class="skills">
-        <span class="skill">Go</span>
-        <span class="skill">WebSockets</span>
-        <span class="skill">REST APIs</span>
-        <span class="skill">Blockchain</span>
-        <span class="skill">P2P Networking</span>
-        <span class="skill">SHA256</span>
-        <span class="skill">JSON</span>
-        <span class="skill">CLI</span>
-        <span class="skill">Git</span>
-        <span class="skill">Linux</span>
-        <span class="skill">Rust (learning)</span>
-    </div>
-
-    <p style="margin: 20px 0; color: #8b949e; line-height: 1.6;">
-        I build distributed systems in Go. Passionate about blockchain, P2P networking, and real-time applications.
-        Currently exploring Rust for high-performance systems.
-        <br><br>
-        📍 All projects built on Termux (Android) – development anywhere, anytime.
-    </p>
-
-    <!-- ===== PROJECT 1 ===== -->
     <div class="project">
-        <h2>⛓️ Go Blockchain Node</h2>
-        <p>Full blockchain node with mining, P2P networking, wallet system, and real-time web UI.</p>
-        <div class="tech">Go • WebSocket • SHA256 • JSON</div>
-        <div>
-            <span class="badge badge-blockchain">Proof-of-Work</span>
-            <span class="badge badge-websocket">P2P</span>
-            <span class="badge badge-go">Wallet</span>
-        </div>
-        <div class="links">
-            <a href="https://github.com/yourusername/blockchain-node">📦 GitHub</a>
-        </div>
+        <h2>⛓️ Blockchain Node</h2>
+        <p>Full blockchain with mining, P2P, wallet, and web UI.</p>
+        <p class="tech">Go • WebSocket • SHA256</p>
+        <a href="https://github.com/octavianmalopha13-tech/blockchain-node">View on GitHub →</a>
     </div>
 
-    <!-- ===== PROJECT 2 ===== -->
     <div class="project">
         <h2>🗄️ Distributed KV Store</h2>
-        <p>Key-value store that syncs across nodes via WebSocket with JSON persistence.</p>
-        <div class="tech">Go • WebSocket • REST API • JSON</div>
-        <div>
-            <span class="badge badge-websocket">WebSocket Sync</span>
-            <span class="badge badge-go">REST API</span>
-        </div>
-        <div class="links">
-            <a href="https://github.com/yourusername/kv-store">📦 GitHub</a>
-        </div>
+        <p>Key-value store with WebSocket sync.</p>
+        <p class="tech">Go • WebSocket • JSON</p>
+        <a href="https://github.com/octavianmalopha13-tech/kv-store">View on GitHub →</a>
     </div>
 
-    <!-- ===== PROJECT 3 ===== -->
     <div class="project">
-        <h2>💬 Real-Time Chat App</h2>
-        <p>Multi-room chat with WebSocket real-time messaging and blockchain-based history.</p>
-        <div class="tech">Go • WebSocket • HTML/CSS • JavaScript</div>
-        <div>
-            <span class="badge badge-websocket">Real-Time</span>
-            <span class="badge badge-go">Multi-Room</span>
-        </div>
-        <div class="links">
-            <a href="https://github.com/yourusername/chat-app">📦 GitHub</a>
-        </div>
+        <h2>💬 Chat App</h2>
+        <p>Real-time chat with multiple rooms.</p>
+        <p class="tech">Go • WebSocket • HTML/CSS</p>
+        <a href="https://github.com/octavianmalopha13-tech/chat-app">View on GitHub →</a>
     </div>
 
-    <!-- ===== PROJECT 4 ===== -->
     <div class="project">
-        <h2>🔗 Unified Blockchain + KV + Chat</h2>
-        <p>All three projects combined into one unified application – blockchain, KV store, and chat together.</p>
-        <div class="tech">Go • WebSocket • SHA256 • REST API</div>
-        <div>
-            <span class="badge badge-blockchain">Blockchain</span>
-            <span class="badge badge-go">Unified</span>
-        </div>
-        <div class="links">
-            <a href="https://github.com/yourusername/unified-blockchain">📦 GitHub</a>
-        </div>
+        <h2>🔗 Unified Blockchain</h2>
+        <p>Blockchain + KV + Chat all in one.</p>
+        <p class="tech">Go • WebSocket • SHA256</p>
+        <a href="https://github.com/octavianmalopha13-tech/unified-blockchain">View on GitHub →</a>
     </div>
 
-    <!-- ===== STATS ===== -->
-    <div style="display: flex; gap: 30px; flex-wrap: wrap; margin-top: 30px; padding: 20px; background: #161b22; border-radius: 10px;">
-        <div><span style="color: #58a6ff; font-size: 2rem;">4</span> <span style="color: #8b949e;">Projects</span></div>
-        <div><span style="color: #58a6ff; font-size: 2rem;">1</span> <span style="color: #8b949e;">Language</span></div>
-        <div><span style="color: #58a6ff; font-size: 2rem;">100%</span> <span style="color: #8b949e;">Self-Taught</span></div>
-        <div><span style="color: #58a6ff; font-size: 2rem;">📱</span> <span style="color: #8b949e;">Built on Android</span></div>
+    <div style="margin-top: 40px; padding-top: 20px; border-top: 1px solid #30363d;">
+        <p>📱 Built on Termux (Android) • 2026</p>
+        <a href="https://github.com/octavianmalopha13-tech">🐙 GitHub</a>
     </div>
-
-    <div class="footer">
-        <p>💻 Built with Go, WebSocket, and SHA256</p>
-        <p style="margin-top: 5px;">📱 All projects built on Termux (Android) • 2026</p>
-    </div>
-
 </body>
 </html>
