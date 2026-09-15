@@ -1,0 +1,391 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project Progress • Octavian</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            font-family: 'Segoe UI', Tahoma, sans-serif;
+            background: #0d1117;
+            color: #c9d1d9;
+            padding: 40px 20px;
+            max-width: 1100px;
+            margin: 0 auto;
+        }
+        .header { margin-bottom: 30px; }
+        h1 { color: #58a6ff; font-size: 2.2rem; margin-bottom: 8px; }
+        .subtitle { color: #8b949e; font-size: 1rem; }
+        .back-link {
+            display: inline-block;
+            color: #58a6ff;
+            text-decoration: none;
+            margin-bottom: 20px;
+            font-size: 0.9rem;
+        }
+        .back-link:hover { text-decoration: underline; }
+        .stats {
+            display: flex;
+            gap: 20px;
+            flex-wrap: wrap;
+            margin-bottom: 30px;
+            padding: 20px;
+            background: #161b22;
+            border-radius: 10px;
+            border: 1px solid #30363d;
+        }
+        .stat { flex: 1; min-width: 120px; }
+        .stat-num { color: #58a6ff; font-size: 2rem; font-weight: bold; }
+        .stat-label { color: #8b949e; font-size: 0.85rem; }
+        .track {
+            margin-bottom: 30px;
+            background: #161b22;
+            border-radius: 10px;
+            padding: 20px;
+            border-left: 4px solid #58a6ff;
+        }
+        .track-title {
+            color: #58a6ff;
+            font-size: 1.3rem;
+            margin-bottom: 15px;
+            font-weight: bold;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+        th {
+            text-align: left;
+            color: #8b949e;
+            font-size: 0.75rem;
+            text-transform: uppercase;
+            padding: 10px 8px;
+            border-bottom: 1px solid #30363d;
+            letter-spacing: 0.5px;
+        }
+        td {
+            padding: 12px 8px;
+            border-bottom: 1px solid #21262d;
+            font-size: 0.9rem;
+        }
+        tr:last-child td { border-bottom: none; }
+        .proj-name { color: #c9d1d9; font-weight: 500; }
+        .proj-tech { color: #f0883e; font-size: 0.8rem; }
+        .status {
+            display: inline-block;
+            padding: 3px 10px;
+            border-radius: 12px;
+            font-size: 0.75rem;
+            font-weight: bold;
+            white-space: nowrap;
+        }
+        .s-done { background: #238636; color: #fff; }
+        .s-progress { background: #9e6a03; color: #fff; }
+        .s-planned { background: #30363d; color: #8b949e; }
+        .s-blocked { background: #8b1a1a; color: #fff; }
+        .gh-link {
+            color: #58a6ff;
+            text-decoration: none;
+            font-size: 0.85rem;
+        }
+        .gh-link:hover { text-decoration: underline; }
+        .footer {
+            margin-top: 40px;
+            padding-top: 20px;
+            border-top: 1px solid #30363d;
+            text-align: center;
+            color: #8b949e;
+            font-size: 0.85rem;
+        }
+        @media (max-width: 600px) {
+            th, td { padding: 8px 4px; font-size: 0.8rem; }
+            h1 { font-size: 1.6rem; }
+        }
+    </style>
+</head>
+<body>
+
+    <a href="index.html" class="back-link">← Back to Portfolio</a>
+
+    <div class="header">
+        <h1>🚀 Project Progress Tracker</h1>
+        <div class="subtitle">Live status of every project I'm building</div>
+    </div>
+
+    <div class="stats">
+        <div class="stat">
+            <div class="stat-num">23</div>
+            <div class="stat-label">Total Projects</div>
+        </div>
+        <div class="stat">
+            <div class="stat-num">5</div>
+            <div class="stat-label">Completed</div>
+        </div>
+        <div class="stat">
+            <div class="stat-num">0</div>
+            <div class="stat-label">In Progress</div>
+        </div>
+        <div class="stat">
+            <div class="stat-num">18</div>
+            <div class="stat-label">Planned</div>
+        </div>
+    </div>
+
+    <!-- TRACK 1 -->
+    <div class="track">
+        <div class="track-title">🌐 Track 1: Networking Mastery (Go)</div>
+        <table>
+            <thead>
+                <tr>
+                    <th>Project</th>
+                    <th>Tech</th>
+                    <th>Status</th>
+                    <th>Link</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td class="proj-name">1. URL Shortener + Analytics</td>
+                    <td class="proj-tech">Go • SQLite</td>
+                    <td><span class="status s-planned">Planned</span></td>
+                    <td>—</td>
+                </tr>
+                <tr>
+                    <td class="proj-name">2. HTTP Load Balancer</td>
+                    <td class="proj-tech">Go • TCP</td>
+                    <td><span class="status s-planned">Planned</span></td>
+                    <td>—</td>
+                </tr>
+                <tr>
+                    <td class="proj-name">3. Distributed Cache</td>
+                    <td class="proj-tech">Go • TCP • LRU</td>
+                    <td><span class="status s-planned">Planned</span></td>
+                    <td>—</td>
+                </tr>
+                <tr>
+                    <td class="proj-name">4. Distributed Task Queue</td>
+                    <td class="proj-tech">Go • HTTP</td>
+                    <td><span class="status s-planned">Planned</span></td>
+                    <td>—</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+    <!-- TRACK 2 -->
+    <div class="track">
+        <div class="track-title">⚡ Track 2: Real-Time Mastery (Go + React)</div>
+        <table>
+            <thead>
+                <tr>
+                    <th>Project</th>
+                    <th>Tech</th>
+                    <th>Status</th>
+                    <th>Link</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td class="proj-name">5. Habit Tracker</td>
+                    <td class="proj-tech">Go • WebSocket</td>
+                    <td><span class="status s-planned">Planned</span></td>
+                    <td>—</td>
+                </tr>
+                <tr>
+                    <td class="proj-name">6. Multiplayer Game Server</td>
+                    <td class="proj-tech">Go • WebSocket</td>
+                    <td><span class="status s-planned">Planned</span></td>
+                    <td>—</td>
+                </tr>
+                <tr>
+                    <td class="proj-name">7. P2P File Sync</td>
+                    <td class="proj-tech">Go • WebSocket</td>
+                    <td><span class="status s-planned">Planned</span></td>
+                    <td>—</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+    <!-- TRACK 3 -->
+    <div class="track">
+        <div class="track-title">🦀 Track 3: Systems Mastery (Rust)</div>
+        <table>
+            <thead>
+                <tr>
+                    <th>Project</th>
+                    <th>Tech</th>
+                    <th>Status</th>
+                    <th>Link</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td class="proj-name">8. Terminal Roguelike</td>
+                    <td class="proj-tech">Rust • Ratatui</td>
+                    <td><span class="status s-planned">Planned</span></td>
+                    <td>—</td>
+                </tr>
+                <tr>
+                    <td class="proj-name">9. Log Aggregator</td>
+                    <td class="proj-tech">Rust</td>
+                    <td><span class="status s-planned">Planned</span></td>
+                    <td>—</td>
+                </tr>
+                <tr>
+                    <td class="proj-name">10. Password Manager</td>
+                    <td class="proj-tech">Rust • AES-GCM • Argon2</td>
+                    <td><span class="status s-progress">In Progress</span></td>
+                    <td>—</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+    <!-- TRACK 4 -->
+    <div class="track">
+        <div class="track-title">🏢 Track 4: Real-World Apps</div>
+        <table>
+            <thead>
+                <tr>
+                    <th>Project</th>
+                    <th>Tech</th>
+                    <th>Status</th>
+                    <th>Link</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td class="proj-name">11. Personal Finance Tracker</td>
+                    <td class="proj-tech">Go • React</td>
+                    <td><span class="status s-planned">Planned</span></td>
+                    <td>—</td>
+                </tr>
+                <tr>
+                    <td class="proj-name">12. IoT Sensor Dashboard</td>
+                    <td class="proj-tech">Go • MQTT • React</td>
+                    <td><span class="status s-planned">Planned</span></td>
+                    <td>—</td>
+                </tr>
+                <tr>
+                    <td class="proj-name">13. Hospital / Clinic System</td>
+                    <td class="proj-tech">Go • PostgreSQL • React</td>
+                    <td><span class="status s-planned">Planned</span></td>
+                    <td>—</td>
+                </tr>
+                <tr>
+                    <td class="proj-name">14. Learning Management System</td>
+                    <td class="proj-tech">Go • PostgreSQL • React</td>
+                    <td><span class="status s-planned">Planned</span></td>
+                    <td>—</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+    <!-- TRACK 5 -->
+    <div class="track">
+        <div class="track-title">🔐 Track 5: Security (Rust/Go)</div>
+        <table>
+            <thead>
+                <tr>
+                    <th>Project</th>
+                    <th>Tech</th>
+                    <th>Status</th>
+                    <th>Link</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td class="proj-name">15. Certificate Authority</td>
+                    <td class="proj-tech">Rust • X.509</td>
+                    <td><span class="status s-planned">Planned</span></td>
+                    <td>—</td>
+                </tr>
+                <tr>
+                    <td class="proj-name">16. Intrusion Detection System</td>
+                    <td class="proj-tech">Rust • Regex</td>
+                    <td><span class="status s-planned">Planned</span></td>
+                    <td>—</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+    <!-- TRACK 6 -->
+    <div class="track">
+        <div class="track-title">🎮 Track 6: Fun & Visual</div>
+        <table>
+            <thead>
+                <tr>
+                    <th>Project</th>
+                    <th>Tech</th>
+                    <th>Status</th>
+                    <th>Link</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td class="proj-name">17. Music Player + Visualizer</td>
+                    <td class="proj-tech">Rust • FFT</td>
+                    <td><span class="status s-planned">Planned</span></td>
+                    <td>—</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+    <!-- COMPLETED -->
+    <div class="track" style="border-left-color: #238636;">
+        <div class="track-title" style="color: #3fb950;">✅ Completed Projects</div>
+        <table>
+            <thead>
+                <tr>
+                    <th>Project</th>
+                    <th>Tech</th>
+                    <th>Status</th>
+                    <th>Link</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td class="proj-name">Go Blockchain Node</td>
+                    <td class="proj-tech">Go • WebSocket • SHA256</td>
+                    <td><span class="status s-done">Done</span></td>
+                    <td><a class="gh-link" href="https://github.com/octavianmalopha13-tech/blockchain-node" target="_blank">GitHub ↗</a></td>
+                </tr>
+                <tr>
+                    <td class="proj-name">Distributed KV Store</td>
+                    <td class="proj-tech">Go • WebSocket</td>
+                    <td><span class="status s-done">Done</span></td>
+                    <td><a class="gh-link" href="https://github.com/octavianmalopha13-tech/kv-store" target="_blank">GitHub ↗</a></td>
+                </tr>
+                <tr>
+                    <td class="proj-name">Real-Time Chat App</td>
+                    <td class="proj-tech">Go • WebSocket</td>
+                    <td><span class="status s-done">Done</span></td>
+                    <td><a class="gh-link" href="https://github.com/octavianmalopha13-tech/chat-app" target="_blank">GitHub ↗</a></td>
+                </tr>
+                <tr>
+                    <td class="proj-name">Unified Blockchain + KV + Chat</td>
+                    <td class="proj-tech">Go • WebSocket</td>
+                    <td><span class="status s-done">Done</span></td>
+                    <td><a class="gh-link" href="https://github.com/octavianmalopha13-tech/unified-blockchain" target="_blank">GitHub ↗</a></td>
+                </tr>
+                <tr>
+                    <td class="proj-name">Rust Blockchain Node</td>
+                    <td class="proj-tech">Rust • Axum • WebSocket</td>
+                    <td><span class="status s-done">Done</span></td>
+                    <td>—</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+    <div class="footer">
+        📱 Built on Termux (Android) • Live progress tracker
+    </div>
+
+</body>
+</html>
